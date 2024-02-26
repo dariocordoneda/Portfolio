@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import {useDispatch,useSelector} from 'react-redux'
-import facebook from '../images/facebook.png'
-import linkedin from '../images/linkedin.png'
-import twitter from '../images/twitter.png'
-import daniel from '../images/daniel5.jpg'
+import linkedin from '../images/logo-linkedin-icon-1536-3964382085.png'
+import dario from '../images/DarioBack.jpg'
 import git from '../images/hub2.png'
 import raspberry from '../images/rasp-berry.png'
 import { changeBanner } from '../redux/portafolioDucks';
@@ -41,10 +39,13 @@ header .rasp{
     cursor: pointer;
 }
 
+
+
+
  header .toggle{
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     
 }
@@ -55,7 +56,7 @@ header .rasp{
     top: 7px;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #080808;
     
 }
  header .toggle::after{
@@ -64,7 +65,7 @@ header .rasp{
     bottom: 7px;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #080808;
 }
 
 .banner-active header .toggle::before{
@@ -83,7 +84,7 @@ header .rasp{
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: url(${daniel});
+    background: url(${dario});
     background-size: cover;
     display: flex;
     align-items: center;
@@ -100,20 +101,20 @@ header .rasp{
 }
 
 .content h2{
-    color: #fff;
+    color: #080808;
     font-size: 2.5em;
 }
 
 .content h2 span{
-    color: #40c3ff;
+    color: #0E33BB;
     font-size: 1.2em;
 
 }
 
 .content p{
     font-size: 1.2em;
-    color: #fff;
-    font-weight: 300;
+    color: #080808;
+    font-weight: 700;
 }
 
 .content a{
@@ -144,10 +145,10 @@ header .rasp{
     position: relative;
     display: grid;
     place-items: center;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid #080808;
     margin: 10px 0 0;
 }
 
@@ -156,9 +157,9 @@ header .rasp{
 }
 
 .sci li a img{
-    max-width: 20px;
-    filter: invert(1);
-    mix-blend-mode: difference;
+    max-width: 50px;
+  
+    
 }
 
 @media (max-width: 767px){
@@ -219,14 +220,14 @@ export default function Hero() {
                     <div className="toggle" onClick={()=>dispatch(changeBanner())}></div>
                 </header>
                 <div className="content">
-                    <h2>Hola,<br/>Soy <span>Daniel Giraldo</span></h2>
-                    <p>Ingeniero electronico de la universidad industrial de santander, apasionado por el desarrollo de sofware y Internet de las cosas</p>
+                    <h2>Hi!<br/>I'm <span>Dario Cordoneda Bojanich</span></h2>
+                    <p>I am a fullstack developer and QA Automation student, passionate about music, electronics and mechanical engineering.</p>
                     <a href="#about"> Know more</a>
                 </div>
                 <u className="sci">
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/danielantonio.giraldoacosta/"><img src={facebook} alt="" /></a></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-antonio-bobadilla-giraldo-6639aa17a/"><img src={linkedin} alt="" /></a></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/metallicano"><img src={git} alt="" /></a></li>
+                    
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dario-cordoneda-08a84b244/"><img src={linkedin} alt="" /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda"><img src={git} alt="" /></a></li>
                 </u>
             </section>
         </HeroStyled>

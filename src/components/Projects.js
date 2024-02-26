@@ -2,16 +2,10 @@ import React from 'react';
 import styled from 'styled-components'
 import pokemon from '../images/pokemon.jpg'
 import js from '../images/js2.svg'
-import league2 from '../images/lol5.png'
 import css from '../images/css.png'
 import html from '../images/html2.png'
-import iot from '../images/iot3.png'
 import node from '../images/node3.png'
-import ps from '../images/ps.png'
-import python from '../images/python2.jpg'
-import rasp from '../images/rasp3.png'
 import react from '../images/react.png'
-import mongo from '../images/mongo2.png'
 import redux from '../images/redux.png'
 import bootstrap from '../images/bot2.png'
 import github from '../images/github.png'
@@ -110,19 +104,19 @@ export default function Projects() {
         <ProjectsStyled id="projects">
             <div className="cabecera">
                 <h1>projects</h1>
-                <p>Estos son algunos de los proyectos que he realizado para mejorar mis habilidades en el desarollo web, todos mis proyectos se encuentran en <span><a target="_blank" rel="noopener noreferrer" href="https://github.com/metallicano">mi github</a></span></p>
+                <p>These are some of the projects I have done to improve my web development skills, all my projects can be found at <span><a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">mi github</a></span></p>
             </div>
             <div className="project">
                 <div className="card">
                     <div className="card-header">
-                        <a target="_blank" rel="noopener noreferrer" href="https://githubclonedanielgiraldo.netlify.app/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">
                             <img src={github} alt="" />
                         </a>
                     </div>
                     <div className="card-body">
-                        <h1><a target="_blank" rel="noopener noreferrer" href="https://githubclonedanielgiraldo.netlify.app/">Github clone</a></h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">Github clone</a></h1>
                         <div className="contenido">
-                            <p>Este proyecto te permite buscar los repositorios de codigo de los usuarios de github, consumiendo su api</p>
+                            <p>lorem    </p>
                         </div>
                         <div className="herramientas">
                             <div className="icon"><img src={js} alt="" /> </div>
@@ -134,14 +128,14 @@ export default function Projects() {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <a target="_blank" rel="noopener noreferrer" href="https://pokedexdanielgiraldo.netlify.app/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">
                         <img src={pokemon} alt="" />
                         </a>
                     </div>
                     <div className="card-body">
-                        <h1><a target="_blank" rel="noopener noreferrer" href="https://pokedexdanielgiraldo.netlify.app/">Pokedex</a></h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">Pokedex</a></h1>
                         <div className="contenido">
-                            <p>Esta applicacion te permite buscar cualquier pokemon y obtener informacion de sus estadisicas base, gracias a la PokeApi</p>
+                            <p> lorem</p>
                         </div>
                         <div className="herramientas">
                             <div className="icon"><img src={react} alt="" /> </div>
@@ -153,34 +147,34 @@ export default function Projects() {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <a target="_blank" rel="noopener noreferrer" href="https://javascript-fullstack-daniel.herokuapp.com/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">
                             <img src={books} alt="" />
                         </a>
                     </div>
                     <div className="card-body">
-                        <h1><a target="_blank" rel="noopener noreferrer" href="https://javascript-fullstack-daniel.herokuapp.com/">Books App</a></h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">Books App</a></h1>
                         <div className="contenido">
-                            <p>Aplicaion full stack de javascript que te permite guardar tus libros favoritos en una base de datos</p>
+                            <p>lorem</p>
                         </div>
                         <div className="herramientas">
                             <div className="icon"><img src={html} alt="" /> </div>
                             <div className="icon"><img src={js} alt="" /></div>
                             <div className="icon"><img src={bootstrap} alt="" /></div>
                             <div className="icon"><img src={node} alt="" /></div>
-                            <div className="icon"><img src={mongo} alt="" /></div>
+                            
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <a target="_blank" rel="noopener noreferrer" href="https://metallicano.github.io/-weather-grafics-app-react.js/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">
                             <img src={weather} alt="" />
                         </a>
                     </div>
                     <div className="card-body">
-                        <h1><a target="_blank" rel="noopener noreferrer" href="https://metallicano.github.io/-weather-grafics-app-react.js/">weather App</a></h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://github.com/dariocordoneda">weather App</a></h1>
                         <div className="contenido">
-                            <p>Encuentra los datos climaticos de cualquier parte del mundo. Esta aplicacion te plasma los datos en una grafica realizada con chart.js que cambia en tiempo real, </p>
+                            <p>lorem </p>
                         </div>
                         <div className="herramientas">
                             <div className="icon"><img src={js} alt="" /> </div>

@@ -11,7 +11,7 @@ const NavigationStyled = styled.div`
     right: -300px;
     width: 300px;
     height: 100%;
-    background: #40c3ff;
+    background: #0E33BB;
     z-index: 1;
     display: grid;
     place-items: center;

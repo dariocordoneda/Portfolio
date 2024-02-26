@@ -1,7 +1,7 @@
 import React from 'react';
 import styled  from 'styled-components'
-import ws from '../images/ws2.png'
-import insta from '../images/insta2.png'
+import mail from '../images/mail.png'
+
 
 const FooterStyled = styled.div`
 color: white;
@@ -20,7 +20,7 @@ box-sizing: border-box;
     
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: left
 }
 
 .footer img{
@@ -28,13 +28,7 @@ box-sizing: border-box;
     height: 70px;
 }
 
-.insta{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
+
 
 
 span{
@@ -47,14 +41,14 @@ span{
     grid-template-columns: 100px 100px;
     gap:20px;
 }
-.ws{
+.mail.icon{
     
     display:flex;
     justify-content:center;
     align-items:center;
 
 }
-.numero{
+.mail{
     
     display: flex;
     align-items:center;
@@ -69,7 +63,7 @@ span{
 }
 h2{
     letter-spacing: 3px;
-    margin-left:30px;
+    margin-left:300px;
 }
 
 .nick h2{
@@ -86,26 +80,21 @@ export default function Footer(){
             <div className="footer">
                 <div>
                     <div className="contacto">
-                        <div className="ws">
-                            <img src={ws} alt=""/>
+                        <div className="mail.icon">
+                            <img src={mail} alt=""/>
                         </div>
-                        <div className="numero">
-                            <h2>32192441222</h2>
-                        </div>
-                    </div>
-                    <div className="contacto">
-                        <div className="insta">
-                            <img src={insta} alt=""/>
-                        </div>
-                        <div className="nick">
-                            <h2>@metallicano18</h2>
+                        <div className="mail">
+                            <h2>Dario_cordoneda@hotmail.com</h2>
                         </div>
                     </div>
+                    
+                       
+                    
                 </div>
             </div>
 
             <div className="footer2">
-                &copy; Daniel Giraldo
+                &copy; Dario Cordoneda
             </div>
         </FooterStyled>
     )

@@ -1,16 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
 import js from '../images/js2.svg'
-import league2 from '../images/lol5.png'
+import guitar from '../images/electric-guitar_4486768.png'
 import css from '../images/css.png'
 import html from '../images/html2.png'
-import iot from '../images/iot3.png'
+import postman from '../images/postman-300x300 Chico.png'
 import node from '../images/node3.png'
-import ps from '../images/ps.png'
-import python from '../images/python2.jpg'
+import postgres from '../images/AppIcon Chico.png'
+import express from '../images/express-js-2109449675.png'
 import rasp from '../images/rasp3.png'
 import react from '../images/react.png'
-import mongo from '../images/mongo2.png'
 import redux from '../images/redux.png'
 import bootstrap from '../images/bot2.png'
 
@@ -44,7 +43,7 @@ background: black;
 
 .likes-area{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1,5fr;
     gap: 10px;
     margin: 10px;
     padding: 10px;
@@ -53,13 +52,15 @@ background: black;
 }
 
 .likes-card1{
-    /*border: 1px solid red;*/
+   
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .likes-card2{
-    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+   
     
 }
 
@@ -70,9 +71,9 @@ background: black;
     
 }
 
-.league-icon{
-    width:100px;
-    height: 100px;
+.guitar-icon{
+    width:75px;
+    height: 75px;
     
 }
 
@@ -145,10 +146,8 @@ export default function About() {
                 <div className="me">
                     <h1>About <span>me</span></h1>
                     <p className = "aboutme">
-                    A lo largo de mi carrera me interese por el area del internet de las cosas debido a que combina 2 areas interesantes,
-                    las cuales son software y hardware, mi curiosidad en el software me llevo al aprendizaje del desarrollo web el cual es
-                    He realizado mis proyectos usando tecnologias 
-                    del frontend como react y complementandolos con herramientas del backend como node.js y mongodb.
+                    I have expertise in technologies such as React, Redux, Express, Node.js, JavaScript, and CSS.
+From a very young age, I spent hours fixing things that required inventiveness and precise motor skills; attention to detail was paramount. The limited resources at my disposal forced me to become creative in my quest to learn and resolve the challenges that confronted me. This is how my interest in technology and mechanical engineering blossomed. I have a genuine passion for Programming, as it constitutes a significant pillar in my life. It enables me not only to ensure the functionality of my technological devices but also to do so efficiently and tailor them to my needs, or anyone else's who may require them.
                     </p>
                 </div>
                 <div className="likes">
@@ -157,14 +156,14 @@ export default function About() {
                         <div className="likes-card1">
                             <ul>
                                 <li>
-                                    <i className="fas fa-biking"></i>
-                                    <span> Cycling</span>
+                                    <i className="fas fa-wrench"></i>
+                                    <span> Mechanics</span>
 
                                 </li>
                                 
                                 <li>
-                                    <i className="fas fa-heartbeat"></i>
-                                    <span> Exercice</span>
+                                    <i className="fas fa-cogs"></i>
+                                    <span> Electronics Engineering</span>
                                 </li>
                                 <li>
                                     <i className="fas fa-laptop-code"></i>
@@ -174,8 +173,8 @@ export default function About() {
                             </ul>
                         </div>
                         <div className="likes-card2">
-                            <p>play League of Legends</p>
-                            <img className="league-icon" src={league2} alt="" />
+                            <p>Play Guitar</p>
+                            <img className="guitar-icon" src={guitar} alt="" />
 
 
 
@@ -192,11 +191,10 @@ export default function About() {
                         <div className="programs"><img className="programas-img" src={js} alt="" /></div>
                         <div className="programs"><img className="programas-img" src={node} alt="" /></div>
                         <div className="programs"><img className="programas-img" src={react} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={python} alt="" /></div>
+                        <div className="programs"><img className="programas-img" src={express} alt="" /></div>
                         <div className="programs"><img className="programas-img" src={rasp} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={iot} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={ps} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={mongo} alt="" /></div>
+                        <div className="programs"><img className="programas-img" src={postman} alt="" /></div>
+                        <div className="programs"><img className="programas-img" src={postgres} alt="" /></div>
                         <div className="programs"><img className="programas-img" src={bootstrap} alt="" /></div>
                         <div className="programs"><img className="programas-img" src={redux} alt="" /></div>
                     </div>
