@@ -1,206 +1,68 @@
 import React from 'react';
-import styled from 'styled-components'
-import js from '../images/js2.svg'
-import guitar from '../images/electric-guitar_4486768.png'
-import css from '../images/css.png'
-import html from '../images/html2.png'
-import postman from '../images/postman-300x300 Chico.png'
-import node from '../images/node3.png'
-import postgres from '../images/AppIcon Chico.png'
-import express from '../images/express-js-2109449675.png'
-import rasp from '../images/rasp3.png'
-import react from '../images/react.png'
-import redux from '../images/redux.png'
-import bootstrap from '../images/bot2.png'
+import photo from '../assets/photo.jpg';
 
+const experience = [
+  { role: 'Founder & Technical Director', company: 'LGI ELECTRONICS', color: 'var(--r)' },
+  { role: 'Apple Specialist Technician', company: 'IFIX NEA', color: 'var(--b)' },
+  { role: 'Operations Manager', company: 'CONING S.A.C.C.', color: 'var(--p)' },
+  { role: 'After-Sales Advisor', company: 'SEBASTIANI S.A. — VOLKSWAGEN', color: 'var(--muted)' },
+];
 
-const AboutStyled = styled.div`
-margin-top: 30px;
-padding: 100px;
- /*border: 1px solid red;*/
-background: black;
-.about{
-    display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr;*/
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    margin: 10px 0;
-    /*rder: 1px solid red;*/
-}
-.me{
-    /*border: 1px solid red;*/
-    
-    
-    
-}
-
-.likes{
-    /*border: 1px solid red;*/
-    text-align: center;
-    
-
-}
-
-.likes-area{
-    display: grid;
-    grid-template-columns: 1fr 1,5fr;
-    gap: 10px;
-    margin: 10px;
-    padding: 10px;
-    background: #0F0F0F;
-    border-radius: 15px;
-}
-
-.likes-card1{
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.likes-card2{
-    display: flex;
-    justify-content: center;
-   
-    
-}
-
-.skills{
-    /*border: 1px solid red;*/
-    text-align: center;
-    
-    
-}
-
-.guitar-icon{
-    width:75px;
-    height: 75px;
-    
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px 5px;
-  grid-template-areas: ". . . ." ". . . .";
-  padding: 10px;
-  background: #0F0F0F;
-  border-radius: 15px;
-}
-
-.programs{
-    /*border: 1px solid red;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.programas-img{
-    width:50px;
-    height: 50px;
-}
-.programas-img-css{
-    width:64px;
-    height: 64px;
-}
-
-h1{
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #40c3ff;;
-}
-
-p{
-    color: white;
-}
-
-.aboutme{
-    color:white;
-    padding: 10px;
-    background: #0F0F0F;
-    border-radius: 15px;
-}
-
-i{
-    font-size: 40px;
-    color: white;
-    margin: 10px;
-}
-li{
-    list-style: none;
-}
-
-li span{
-    color: white;
-}
-
-
-`
+const stats = [
+  { n: '3+', l: 'Years fullstack dev' },
+  { n: '4', l: 'Companies & roles' },
+  { n: '1', l: 'Live system in prod' },
+  { n: 'C1', l: 'English level' },
+];
 
 export default function About() {
+  return (
+    <section id="about" style={{ padding: '110px 60px', display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '80px', alignItems: 'start' }}>
+      {/* Photo */}
+      <div className="rv" style={{ position: 'relative' }}>
+        <img src={photo} alt="Dario Cordoneda Bojanich"
+          style={{ width: '100%', display: 'block', objectFit: 'cover', objectPosition: 'center top', filter: 'grayscale(15%) contrast(1.05)' }} />
+        <div style={{ position: 'absolute', inset: 0, border: '1px solid var(--y)', transform: 'translate(10px, 10px)', pointerEvents: 'none', zIndex: -1 }} />
+      </div>
 
-    return (
-        <AboutStyled id="about">
-            <div className="about">
-                <div className="me">
-                    <h1>About <span>me</span></h1>
-                    <p className = "aboutme">
-                    I have expertise in technologies such as React, Redux, Express, Node.js, JavaScript, and CSS.
-From a very young age, I spent hours fixing things that required inventiveness and precise motor skills; attention to detail was paramount. The limited resources at my disposal forced me to become creative in my quest to learn and resolve the challenges that confronted me. This is how my interest in technology and mechanical engineering blossomed. I have a genuine passion for Programming, as it constitutes a significant pillar in my life. It enables me not only to ensure the functionality of my technological devices but also to do so efficiently and tailor them to my needs, or anyone else's who may require them.
-                    </p>
-                </div>
-                <div className="likes">
-                    <h1><span>Hobbies</span></h1>
-                    <div className="likes-area">
-                        <div className="likes-card1">
-                            <ul>
-                                <li>
-                                    <i className="fas fa-wrench"></i>
-                                    <span> Mechanics</span>
+      {/* Content */}
+      <div>
+        <div className="section-label">04 / ABOUT</div>
+        <h2 className="section-title rv">Who<br />I Am</h2>
 
-                                </li>
-                                
-                                <li>
-                                    <i className="fas fa-cogs"></i>
-                                    <span> Electronics Engineering</span>
-                                </li>
-                                <li>
-                                    <i className="fas fa-laptop-code"></i>
-                                    <span> Code</span>
-                                </li>
+        <p className="rv d1" style={{ color: 'var(--muted)', lineHeight: 1.8, fontWeight: 300, fontSize: '1rem', marginBottom: '20px' }}>
+          I'm <strong style={{ color: 'var(--text)', fontWeight: 500 }}>Dario Cordoneda Bojanich</strong> — Full Stack Developer, microelectronics expert, mechanic, and musician based in <strong style={{ color: 'var(--text)', fontWeight: 500 }}>Resistencia, Chaco, Argentina</strong>. English C1 Advanced.
+        </p>
+        <p className="rv d2" style={{ color: 'var(--muted)', lineHeight: 1.8, fontWeight: 300, fontSize: '1rem', marginBottom: '20px' }}>
+          Founder and Technical Director of <strong style={{ color: 'var(--text)', fontWeight: 500 }}>LGI Electronics</strong>, where I design autonomous hardware systems with solar energy integration, perform advanced microelectronics repair (Apple, consoles, drones), and build all the software tools the business needs — from scratch. Previously <strong style={{ color: 'var(--text)', fontWeight: 500 }}>Apple specialist technician</strong> at Ifix NEA and operations manager at Coning S.A.C.C.
+        </p>
+        <p className="rv d3" style={{ color: 'var(--muted)', lineHeight: 1.8, fontWeight: 300, fontSize: '1rem', marginBottom: '20px' }}>
+          My philosophy: the best work lives at the intersection of <strong style={{ color: 'var(--text)', fontWeight: 500 }}>software, hardware, and creativity</strong>. Whether writing clean code, designing a circuit, building an RC vehicle, or composing music — precision and passion are the constants.
+        </p>
 
-                            </ul>
-                        </div>
-                        <div className="likes-card2">
-                            <p>Play Guitar</p>
-                            <img className="guitar-icon" src={guitar} alt="" />
-
-
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div className="skills">
-                    <h1><span>Skills</span></h1>
-                    <div className="grid-container">
-                        <div className="programs"><img className="programas-img" src={html} alt="" /></div>
-                        <div className="programs"><img className="programas-img-css" src={css} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={js} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={node} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={react} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={express} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={rasp} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={postman} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={postgres} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={bootstrap} alt="" /></div>
-                        <div className="programs"><img className="programas-img" src={redux} alt="" /></div>
-                    </div>
-
-                </div>
+        {/* Stats */}
+        <div className="rv d4" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px', marginTop: '36px' }}>
+          {stats.map(s => (
+            <div key={s.l} style={{ background: 'var(--surf)', padding: '22px' }}>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '2.8rem', color: 'var(--y)', lineHeight: 1 }}>{s.n}</div>
+              <div style={{ fontFamily: "'Space Mono', monospace", fontSize: '0.52rem', letterSpacing: '2px', color: 'var(--muted)', textTransform: 'uppercase', marginTop: '5px' }}>{s.l}</div>
             </div>
-        </AboutStyled>
-    )
+          ))}
+        </div>
+
+        {/* Experience */}
+        <div className="rv d4" style={{ fontFamily: "'Space Mono', monospace", fontSize: '0.55rem', letterSpacing: '3px', color: 'var(--y)', textTransform: 'uppercase', margin: '28px 0 14px' }}>
+          Experience
+        </div>
+        <div className="rv d4" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          {experience.map(e => (
+            <div key={e.company} style={{ padding: '14px 18px', background: 'var(--surf)', borderLeft: `2px solid ${e.color}` }}>
+              <div style={{ fontWeight: 500, fontSize: '0.9rem', color: 'var(--text)' }}>{e.role}</div>
+              <div style={{ fontFamily: "'Space Mono', monospace", fontSize: '0.52rem', letterSpacing: '2px', color: e.color, marginTop: '3px' }}>{e.company}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
